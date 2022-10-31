@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashboard.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
@@ -19,13 +20,15 @@
         <button class="overview-dashboard-list" type="button"><img src="./img/visibility-icon-white.svg" alt="Icone de visão geral">Visão geral</button>
     </div>
     <div class="right-side-dashboard">
-        <div class="card-product-a">
+        <div class="card-product-a animationCard" id="card-product-a">
             <div class="header-card">
                 <img class="currency-icon" style="width: 40px; height: 40px;" src="./img/currency-icon-white.svg" alt="Icone de moeda">
                 <div class="title" style="font-size: large;">Produto A</div>
             </div>
+            <div id="curve_chart" style="width: 400px; height: 500px"></div>
             <div class="price" style="font-weight: 550; font-size: large">R$ 1000.00</div>
         </div>
     </div>
+    <script src="../script.js"></script>
 </body>
 </html>
