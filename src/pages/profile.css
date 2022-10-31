@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(34, 34, 34);
+}
+
+.name-profile{
+    color: white;
+    font-size: 30px;
+    background-color: rgb(26, 26, 26);
+}
+
+.image-profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(167, 167, 167);
+    box-shadow: rgba(153, 153, 165, 0.2) 0px 7px 29px 0px;
+}
+
+.header-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(26, 26, 26);
+}
+
+.main-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(26, 26, 26);
+}
+
+.main-button-profile{
+    width: 200px;
+    height: 40px;
+    color: black;
+    font-size: 80%;
+    background-color: white;
+    transition: 0.4s ease;
+    border-radius: 30px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.main-button-profile:hover{
+    background-color: rgb(180, 180, 180);
+}
+
+.profile-card{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    background-color: rgb(26, 26, 26);
+    margin: 100px;
+    padding: 50px;
+}

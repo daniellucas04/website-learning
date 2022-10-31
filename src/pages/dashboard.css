@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(34, 34, 34);
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard-profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: rgba(153, 153, 165, 0.2) 0px 7px 29px 0px;
+}
+
+.left-menu-dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    left: 0;
+    margin-left: 0;
+    width: 190px;
+    height: 100vh;
+    background-color: rgb(26, 26, 26);
+    gap: 50px;
+}
+
+.overview-dashboard-list{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: none;
+    background-color: rgb(26, 26, 26);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.overview-dashboard-list:hover{
+    color: rgb(136, 136, 136);
+}
+
+.card-product-a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 15px;
+    margin-left: 50px;
+    width: 230px;
+    height: 140px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(26, 26, 26);
+    transition: .4s ease;
+}
+
+.card-product-a:hover{
+    cursor: pointer;
+    box-shadow: rgba(222, 222, 233, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+.header-card{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
