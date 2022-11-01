@@ -11,12 +11,31 @@ function drawChart() {
     ]);
 
     var options = {
-        title: 'Company Performance',
+        title: 'Product Performance',
+        titleTextStyle: { color: 'black', fontSize: '15'},
         curveType: 'function',
-        legend: { position: 'bottom' }
+        legend: { position: 'bottom' },
+        textStyle: { color: 'white'},
+        // backgroundColor: {fill: '#1A1A1A', fillOpacity: 0.5}
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
     chart.draw(data, options);
 }
+
+const cardProductA = document.getElementById('card-product-a');
+const chart = document.getElementById('curve_chart');
+
+function animationCard(){
+    cardProductA.classList.toggle('animationCard');
+    if(chart.style.display === 'block'){
+        chart.style.display = 'none';
+    }else{
+        chart.style.display = 'block';
+    }
+};
+
+cardProductA.addEventListener('dblclick', ()=>{
+    animationCard();
+});
