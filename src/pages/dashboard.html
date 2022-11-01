@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +9,52 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <title>Dashboard</title>
 </head>
+
 <body>
     <div class="left-menu-dashboard">
         <img class="dashboard-profile-image" src="https://github.com/daniellucas04.png" alt="Imagem de perfil">
-        <button class="overview-dashboard-list" type="button"><img src="./img/visibility-icon-white.svg" alt="Icone de visão geral">Visão geral</button>
-        <button class="overview-dashboard-list" type="button"><img src="./img/visibility-icon-white.svg" alt="Icone de visão geral">Visão geral</button>
-        <button class="overview-dashboard-list" type="button"><img src="./img/visibility-icon-white.svg" alt="Icone de visão geral">Visão geral</button>
-        <button class="overview-dashboard-list" type="button"><img src="./img/visibility-icon-white.svg" alt="Icone de visão geral">Visão geral</button>
-        <button class="overview-dashboard-list" type="button"><img src="./img/visibility-icon-white.svg" alt="Icone de visão geral">Visão geral</button>
-        <button class="overview-dashboard-list" type="button"><img src="./img/visibility-icon-white.svg" alt="Icone de visão geral">Visão geral</button>
-        <button class="overview-dashboard-list" type="button"><img src="./img/visibility-icon-white.svg" alt="Icone de visão geral">Visão geral</button>
+        <div class="menu-list-dashboard">
+            <button class="overview-dashboard-list" type="button"><img src="./img/home-icon-white.svg" alt="Icone de inicio">Home</button>
+            <button class="overview-dashboard-list" type="button"><img src="./img/calendar-icon-white.svg" alt="Icone de calendário">Calendar</button>
+            <button class="overview-dashboard-list" type="button"><img src="./img/group-icon-white.svg" alt="Icone de grupo">Group</button>
+            <button class="overview-dashboard-list" type="button"><img src="./img/inventory-icon-white.svg" alt="Icone de visão geral">Inventory</button>
+        </div>
     </div>
     <div class="right-side-dashboard">
         <div class="card-product-a" id="card-product-a">
             <div class="header-card">
                 <img class="currency-icon" style="width: 30px; height: 30px;" src="./img/sell-tag-white.svg" alt="Icone de moeda">
-                <div class="title" style="font-size: large;">Produto A</div>
+                <div class="title" style="font-size: large;">Product A</div>
             </div>
             <div id="curve_chart" style="width: 400px; height: 500px; display: none;"></div>
             <div class="price" style="font-weight: 550; font-size: large">R$ 1000.00</div>
         </div>
+        <div class="card-product-b" id="card-product-b">
+            <div class="header-card">
+                <img class="currency-icon" style="width: 30px; height: 30px;" src="./img/sell-tag-white.svg" alt="Icone de moeda">
+                <div class="title" style="font-size: large;">Product B</div>
+            </div>
+            <div id="piechart_3d" style="width: -1px; height: 500px; display: none;"></div>
+            <div class="price" style="font-weight: 550; font-size: large">R$ 2000.00</div>
+        </div>
+        <div class="card-product-c" id="card-product-c">
+            <div class="header-card">
+                <img class="currency-icon" style="width: 30px; height: 30px;" src="./img/sell-tag-white.svg" alt="Icone de moeda">
+                <div class="title" style="font-size: large;">Product C</div>
+            </div>
+            <div id="donut_single" style="width: -1px; height: 500px; display: none;"></div>
+            <div class="price" style="font-weight: 550; font-size: large">R$ 3000.00</div>
+        </div>
+        <div class="card-product-d" id="card-product-d">
+            <div class="header-card">
+                <img class="currency-icon" style="width: 30px; height: 30px;" src="./img/sell-tag-white.svg" alt="Icone de moeda">
+                <div class="title" style="font-size: large;">Product D</div>
+            </div>
+            <div id="piechart" style="width: -1px; height: 500px; display: none;"></div>
+            <div class="price" style="font-weight: 550; font-size: large">R$ 4000.00</div>
+        </div>
     </div>
     <script src="../script.js"></script>
 </body>
+
 </html>

@@ -1,14 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 * {
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     display: flex;
     flex-direction: row;
     background-color: rgb(34, 34, 34);
     margin: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-transform: uppercase;
+    top: 0;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.header-list {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-li {
+    background-color: white;
+    color: black !important;
+    display: flex;
+    justify-content: center;
+    width: 140px;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+    box-shadow: rgba(202, 202, 211, 0.2) 0px 7px 29px 0px;
+}
+
+.header-li:hover {
+    background-color: rgb(180, 180, 180);
 }
 
 .dashboard-profile-image {
@@ -18,7 +65,7 @@ body{
     box-shadow: rgba(153, 153, 165, 0.2) 0px 7px 29px 0px;
 }
 
-.left-menu-dashboard{
+.left-menu-dashboard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,12 +74,20 @@ body{
     left: 0;
     margin-left: 0;
     width: 250px;
-    height: 100vh;
+    height: 97vh;
     background-color: rgb(26, 26, 26);
     gap: 50px;
+    box-shadow: rgba(172, 172, 176, 0.11) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.overview-dashboard-list{
+.menu-list-dashboard {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 8vh;
+}
+
+.overview-dashboard-list {
     color: white;
     display: flex;
     align-items: center;
@@ -43,11 +98,29 @@ body{
     transition: .3s ease;
 }
 
-.overview-dashboard-list:hover{
+.overview-dashboard-list:hover {
     color: rgb(136, 136, 136);
 }
 
-.card-product-a{
+.card-product-a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 15px;
+    margin-top: 40px;
+    margin-left: 15px;
+    width: 230px;
+    height: 140px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(26, 26, 26);
+    transition: .4s ease;
+    padding-top: 20px;
+    gap: 45px;
+    color: #FFFF
+}
+
+.card-product-b {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -65,25 +138,87 @@ body{
     color: #FFFF
 }
 
-.card-product-a:hover{
+.card-product-c {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 15px;
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 230px;
+    height: 140px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(26, 26, 26);
+    transition: .4s ease;
+    padding-top: 20px;
+    gap: 45px;
+    color: #FFFF
+}
+
+.card-product-d {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 15px;
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 230px;
+    height: 140px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(26, 26, 26);
+    transition: .4s ease;
+    padding-top: 20px;
+    gap: 45px;
+    color: #FFFF
+}
+
+.card-product-a:hover {
     cursor: pointer;
     box-shadow: rgba(172, 172, 176, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+.card-product-b:hover {
+    cursor: pointer;
+    box-shadow: rgba(172, 172, 176, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
 
-.header-card{
+.card-product-c:hover {
+    cursor: pointer;
+    box-shadow: rgba(172, 172, 176, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card-product-d:hover {
+    cursor: pointer;
+    box-shadow: rgba(172, 172, 176, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.header-card {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 15px;
 }
 
-.animationCard{
+.animationCard {
     display: flex !important;
     align-items: center !important;
     justify-content: space-around !important;
-    width: 550px !important;
+    width: 55vh !important;
     height: 38vh !important;
     padding-bottom: 20px !important;
     align-content: center !important;
+}
+
+.right-side-dashboard {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1629px) {
+    right-side-dashboard {
+        display: flex;
+        flex-direction: column;
+    }
 }
